@@ -1,0 +1,40 @@
+body{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  color: #003844;
+  border-bottom: 2px solid #003844;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 30%;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+
+}
