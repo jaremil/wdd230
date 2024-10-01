@@ -1,0 +1,7 @@
+@media (min-width: 550px){
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+      }
+}
