@@ -11,8 +11,6 @@ header {
   column-count: 2;
   font-size: 35px;
   letter-spacing: 3px;
-  grid-template-columns: repeat(auto-fill, minmax())
-  
 }
 
 main {
