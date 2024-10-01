@@ -21,6 +21,24 @@ main {
   column-count: 1;
 }
 
+#menu::before{
+  content:"☰";
+}
+
+#menu.open::before{
+  content: "X";
+}
+
+.heading li {
+  display: none;
+}
+
+.open li {
+  display: block;
+}
+
+
+
 nav {
   background-color: var(--second-color);
   line-height: 50px;

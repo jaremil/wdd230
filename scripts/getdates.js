@@ -11,3 +11,13 @@ document.getElementById("lastModified").innerHTML = currentDate;
 
 var currentDate = "©" + year;
 document.getElementById("copyRight").innerHTML = currentDate;
+
+// Hamburger Response Menu below
+
+const handButton = document.querySelector('#menu');
+const heading = document.querySelector('.heading');
+
+handButton.addEventListener('click', () => {
+    heading.classList.toggle('open');
+    handButton.classList.toggle('open');
+});
