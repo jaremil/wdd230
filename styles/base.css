@@ -32,6 +32,11 @@ img {
   display: none;
 }
 
+#menu {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
 
 #menu::before{
   content:"☰";
@@ -41,17 +46,16 @@ img {
   content: "X";
 }
 
-/* .open li {
+.open li {
   display: block;
-} */
-
-nav {
-  background-color: var(--second-color);
-  line-height: 50px;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
+nav {
+background-color: var(--second-color);
+line-height: 50px;
+padding-top: 1%;
+padding-bottom: 1%;
+}
 
 li {
   list-style-type: none;

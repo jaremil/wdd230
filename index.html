@@ -19,7 +19,7 @@
     <header>
       <img src="images/jademiller.jpg" alt="Profile picture" />
       <h1>Jade Miller</h1>
-      <button id="menu"></button>
+      <button id="menu" class="open"></button>
     </header>
     <nav>
       <ul class="heading">
@@ -70,5 +70,19 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script>
+      const menuButton = document.getElementById("menu");
+      const navItems = document.querySelector(".heading");
+  
+      menuButton.addEventListener("click", function () {
+        menuButton.classList.toggle("open");
+        
+        if (navItems.style.display === "none" || navItems.style.display === "") {
+          navItems.style.display = "block";
+        } else {
+          navItems.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
