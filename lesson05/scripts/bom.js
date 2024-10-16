@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
         input.value = '';
         input.focus();
     } else {
-        alert('Please enter a book and chapter.');
+        alert('Please enter a book and chapter');
         input.focus();
     }
 });
