@@ -12,3 +12,8 @@ html {
   p {
     font-family: Verdana, Helvetica, sans-serif;
   }
+
+
+  .lessons {
+    color: black;
+  }
