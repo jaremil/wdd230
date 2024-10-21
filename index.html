@@ -22,7 +22,9 @@
   
   <body>
     <header>
-      <img src="images/jademiller.jpg" alt="Profile picture" >
+      <picture>
+        <img class="profile" src="images/jademiller.jpg" alt="Profile picture" >
+      </picture>
       <h1>Jade Miller</h1>
       <button id="menu" class="open"></button>
     </header>
@@ -43,6 +45,11 @@
       </ul>
     </nav>
     <main>
+
+      <picture>
+        <img class="hero" src="images/temple.jpg" alt="hero">
+      </picture>
+
       <h2>WDD 230: Web Frontend Development</h2>
       <section>
         <h3>Learning Activities</h3>
@@ -75,24 +82,6 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <!-- <script>
-      const menuButton = document.getElementById("menu");
-      const navItems = document.querySelector(".heading");
-
-      menuButton.addEventListener("click", function () {
-        menuButton.classList.toggle("open");
-
-        if (
-          navItems.style.display === "none" ||
-          navItems.style.display === ""
-        ) {
-          navItems.style.display = "block";
-        } else {
-          navItems.style.display = "none";
-        }
-      });
-    </script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-    <iframe width="450" height="250"></iframe>
   </body>
 </html>

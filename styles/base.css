@@ -21,11 +21,11 @@ main {
   column-count: 1;
 }
 
-img {
-  width: 35%;
+.profile {
+  width: 10rem;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 50%;
+  margin-left: 25%;
 }
 
 #menu {
@@ -77,6 +77,11 @@ a:hover {
   display: grid;
   grid-column: 1;
   text-align: center;
+}
+
+.hero {
+  max-width: 100%;
+  height: auto;
 }
 
 section {

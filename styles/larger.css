@@ -4,8 +4,8 @@
   }
 
   nav {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
     background-color: var(--second-color);
     line-height: 50px;
     padding-top: 1%;
@@ -20,5 +20,12 @@
   .heading li {
     display: inline-block; 
     margin-right: 20px; 
+  }
+
+  .profile {
+    width: 15rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 50%;
   }
 }
