@@ -130,3 +130,19 @@ footer {
   color: var(--text-color);
   font-size: 20px;
 }
+
+.content {
+  
+  
+}
+
+.container {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--main-color);
+  font-size: 20px;
+  padding: 2%;
+  margin-top: 5%;
+  margin-left: 15%;
+}

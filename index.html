@@ -48,8 +48,12 @@
         <li><a href="/lesson02/design-principles.html">Design Principles</a></li>
       </ul>
     </nav>
+ 
     <main>
-
+      <div class="container">
+        <source media="(min-width:400px)" srcset="images/temple.webp">
+        <div class="content">Portland Oregon Temple</div>
+      </div>
       <picture>
         <source media="(min-width:400px)" srcset="images/temple.webp">
         <source media="(max-width:4000px)" srcset="images/temple.webp">
@@ -88,6 +92,6 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
   </body>
 </html>
