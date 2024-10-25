@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
     <link rel="stylesheet" href="styles/base.css" >
     <link rel="stylesheet" href="styles/larger.css" >
     <meta name="msapplication-TitleImage" content="/images/favicon.ico" >
@@ -16,24 +16,33 @@
     <meta property="og:image" content="/images/favicon.ico" >
     <meta property="og:url" content="https://jaremil.github.io/wdd230/" >
     <meta property="og:type" content="website" >
-    <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, course assignment portal" >
+    <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, The Chamber of Commerce" >
+    <meta name="twitter:title" content="Jade Miller - WDD 230 - Web Frontend Development">
+    <meta name="twitter:description" content="WDD 230 - Web Frontend Development, Jade Miller, The Chamber of Commerce">
   </head>
   <body>
 
     <header>
-        <h1>Chamber of Commerce</h1>
+        <h1>Idaho Falls Chamber of Commerce</h1>
         <nav>
             <ul>
-                <li><a href="chamber-site-plan.html.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a class="navBar" href="index.html">Home</a></li>
+                <li><a class="navBar" href="index.html">Discover</a></li>
+                <li><a class="navBar" href="index.html">Directory</a></li>
+                <li><a class="navBar" href="index.html">Join</a></li>
             </ul>
         </nav>
+        <picture>
+          <source media="(min-width:400px)" srcset="images/idahofalls.webp">
+          <source media="(max-width:4000px)" srcset="images/idahofalls.webp">
+          <img class="hero" src="images/idahofalls.webp" alt="hero">
+        </picture>
     </header>
+
+    <main>
     <h1>Site Plan</h1>
     <div class="hero">
-        <a href="join.html" class="cta-button">Join the Chamber</a>
+        <a href="index.html" class="cta-button">Join the Chamber</a>
     </div>
 
     <section class="welcome">
@@ -49,6 +58,18 @@
     <section class="weather">
         <h2>Current Weather</h2>
         <p>Lorem ipsum.</p> 
+
+        <h1>Weather Information</h1>
+        
+        <label for="temperature-input">Enter Temperature (°F):</label>
+        <input type="number" id="temperature-input">
+
+        <label for="wind-speed-input">Enter Wind Speed (mph):</label>
+        <input type="number" id="wind-speed-input">
+
+        <h2 class="calWindchill">Calculated Wind Chill:</h2>
+        <button onclick="calculateWindChill()">Calculate Wind Chill</button>
+        <p id="wind-chill-result"></p>
     </section>
 
     <section class="business-spotlights">
@@ -66,11 +87,11 @@
     <section class="call-to-action">
         <h2>Join Us Today</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
-        <a href="join.html" class="cta-button">Become a Member</a>
+        <a href="index.html" class="cta-button">Become a Member</a>
     </section>
-
-    <footer class="footer">
-        <p>&copy; 2024 this is a fake website</p>
+  </main>
+    <footer>
+        <p class="footerText">&copy; 2024 this is a fake website</p>
     </footer>
 </body>
 </html>
