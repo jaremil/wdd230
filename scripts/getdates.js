@@ -1,3 +1,5 @@
+// Date Display
+
 var currentDate = new Date();
 var year = currentDate.getFullYear();
 var month = currentDate.getMonth() + 1; 
@@ -22,3 +24,16 @@ handButton.addEventListener('click', () => {
     heading.classList.toggle('open');
     handButton.classList.toggle('open');
 });
+
+// How many times the page has been opened
+
+let pageCount = localStorage.getItem('pageCount');
+
+if (pageCount) {
+    pageCount = parseInt(pageCount) + 1;
+} else {
+    pageCount = 1;
+}
+
+localStorage.setItem('pageCount', pageCount);
+console.log(`Page Visits: ${pageCount}`);
