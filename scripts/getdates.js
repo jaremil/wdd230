@@ -37,4 +37,4 @@ if (pageCount) {
 localStorage.setItem('pageCount', pageCount);
 
 var pageVisits = pageCount;
-document.getElementById("pageVisits").innerHTML = pageVisits;
+document.getElementById("pageVisits").innerHTML = `Page Visits: ${pageVisits}`;
