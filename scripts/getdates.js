@@ -34,6 +34,7 @@ if (pageCount) {
 } else {
     pageCount = 1;
 }
-
 localStorage.setItem('pageCount', pageCount);
-console.log(`Page Visits: ${pageCount}`);
+
+var pageVisits = pageCount;
+document.getElementById("pageVisits").innerHTML = pageVisits;
