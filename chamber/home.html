@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
+    <meta name="msapplication-TitleImage" content="/images/favicon.ico" >
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" >
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <meta name="msapplication-TileImage" content="/images/favicon.ico" >
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jade Miller - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Jade Miller - WDD 230 - Web Frontend Development" >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="/images/favicon.ico" >
+    <meta property="og:url" content="https://jaremil.github.io/wdd230/" >
+    <meta property="og:type" content="website" >
+    <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, The Chamber of Commerce" >
+    <meta name="twitter:title" content="Jade Miller - WDD 230 - Web Frontend Development" >
+    <meta name="twitter:description" content="WDD 230 - Web Frontend Development, Jade Miller, The Chamber of Commerce" >
+  </head>
+  <body>
+    <header>
+      <h1>Idaho Falls Chamber of Commerce</h1>
+      <nav>
+        <ul>
+          <li><a class="navBar" href="home.html">Home</a></li>
+          <li><a class="navBar" href="index.html">Discover</a></li>
+          <li><a class="navBar" href="home.html">Directory</a></li>
+          <li><a class="navBar" href="home.html">Join</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
+        <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
+        <img class="hero" src="images/idahofalls.webp" alt="hero" />
+      </picture>
+    </header>
+
+    <main>
+      <h2>Site Plan</h2>
+      <div class="hero">
+        <a href="index.html" class="cta-button">Join the Chamber</a>
+      </div>
+
+      <section class="welcome">
+        <h2>Welcome to the Chamber of Commerce</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <section class="community-info">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <section class="weather">
+        <h1>Current Weather Conditions</h1>
+        <div>
+            <p>Temperature: <span id="temperature">30</span></p> 
+            <p>Wind Speed: <span id="wind-speed">10</span></p> 
+        </div>
+        
+        <button onclick="calculateWindChill()">Calculate Wind Chill</button>
+        
+        <h2>Wind Chill Index: <span id="wind-chill"></span></h2>
+
+        <script>function calculateWindChill() {
+            const temperature = parseFloat(document.getElementById('temperature').textContent);
+            const windSpeed = parseFloat(document.getElementById('wind-speed').textContent);
+        
+            if (temperature <= 50 && windSpeed > 3) {
+                const windChill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
+                document.getElementById('wind-chill').textContent = windChill.toFixed(2);
+            } else {
+                document.getElementById('wind-chill').textContent = 'N/A';
+            }
+        }</script>
+  
+      </section>
+
+      <section class="business-spotlights">
+        <h2>Business Spotlights</h2>
+        <div class="business">
+          <h3>Business 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="business">
+          <h3>Business 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </section>
+
+      <section class="call-to-action">
+        <h2>Join Us Today</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum..
+        </p>
+        <a href="index.html" class="cta-button">Become a Member</a>
+      </section>
+    </main>
+    <footer>
+      <p class="footerText">&copy; 2024 this is a fake website</p>
+    </footer>
+
+  </body>
+</html>
