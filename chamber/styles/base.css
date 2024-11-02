@@ -74,3 +74,11 @@ footer {
     color: var(--text-color);
     display: flex;
 }
+
+/* Smaller Changes */
+
+@media (max-width: 600px) {
+.sideBar {
+    width: 100%;
+}
+}
