@@ -37,6 +37,10 @@ nav ul li a {
     border-color: var(--main-color);
 }
 
+ul {
+    list-style-type: none;
+  }
+
 .navBar:hover {
     border: solid;
     border-radius: 5px
@@ -46,7 +50,7 @@ main {
     margin: 5%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4{
     font-family: 'Merriweather', serif;
 }
 
@@ -73,12 +77,4 @@ footer {
     background-color: var(--main-color);
     color: var(--text-color);
     display: flex;
-}
-
-/* Smaller Changes */
-
-@media (max-width: 600px) {
-.sideBar {
-    width: 100%;
-}
 }
