@@ -141,3 +141,8 @@ footer {
   margin-top: 5%;
   margin-left: 15%;
 }
+
+.errorMessage {
+  color: red; 
+  display: none;
+}

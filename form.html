@@ -10,16 +10,41 @@
     <meta name="msapplication-TileImage" content="/images/favicon.ico">
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Jade Miller - WDD 230 - Web Frontend Development - Chamber of Commerce</title>
+    <title>Jade Miller - WDD 230 - Web Frontend Development - Form</title>
     <meta property="og:title" content="Jade Miller - WDD 230 - Web Frontend Development" >
     <meta property="og:type" content="website" >
     <meta property="og:image" content="/images/favicon.ico" >
     <meta property="og:url" content="https://jaremil.github.io/wdd230/" >
     <meta property="og:type" content="website">
-    <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, course assignment portal" >
+    <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, Form" >
     <meta name="author" content="Jade Miller" >
   </head>
   <body>
 
+    <form method="get" action="thankyou.html">
+        <label>Enter your username:</label>
+        <input id="username" name="username" type="text" required>
+
+        <label>Enter your password:</label>
+        <input id="password" name="password" type="password" pattern="[A-Za-z0-9]{0,8}" required>
+
+        <label>Please confirm your password:</label>
+        <input id="passConfirm" name="passConfirm" type="password" required>
+
+        <label>Enter your email:</label>
+        <input id="email" name="email" type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+        title="A valid byui.edu email address." required>
+
+        <label>Please rate the page:</label>
+        <input id="pageRating" name="pageRating" type="range" min="1" max="10" step="1" required>
+        <span id="ratingValue">5</span>
+
+        <button type="formSubmit">Submit Form</button>
+    </form>
+
+    <p class="errorMessage">Passwords do not match. Please try again.</p>
+    <p class="errorMessage">Please enter a valid email address ending with @byui.edu.</p>
+
+    <script src="scripts/getdates.js"></script>
   </body>
 </html>
