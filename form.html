@@ -19,32 +19,30 @@
     <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, Form" >
     <meta name="author" content="Jade Miller" >
   </head>
-  <body>
+<body>
+    <form class="userpassForm" method="get" action="record.html">
+        <label class="formLabel">Enter your username:</label>
+        <input class="formInput" id="username" name="username" type="text" required>
 
-    <form method="get" action="thankyou.html">
-        <label>Enter your username:</label>
-        <input id="username" name="username" type="text" required>
+        <label class="formLabel">Enter your password:</label>
+        <input class="formInput" id="password" name="password" type="password" pattern="[A-Za-z0-9]{0,8}" required>
 
-        <label>Enter your password:</label>
-        <input id="password" name="password" type="password" pattern="[A-Za-z0-9]{0,8}" required>
+        <label class="formLabel">Please confirm your password:</label>
+        <input class="formInput" id="passConfirm" name="passConfirm" type="password" required>
 
-        <label>Please confirm your password:</label>
-        <input id="passConfirm" name="passConfirm" type="password" required>
-
-        <label>Enter your email:</label>
-        <input id="email" name="email" type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+        <label class="formLabel">Enter your email:</label>
+        <input class="formInput" id="email" name="email" type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
         title="A valid byui.edu email address." required>
 
-        <label>Please rate the page:</label>
-        <input id="pageRating" name="pageRating" type="range" min="1" max="10" step="1" required>
-        <span id="ratingValue">5</span>
+        <label class="formLabel">Please rate the page:</label>
+        <input class="ratingBar" id="pageRating" name="pageRating" type="range" min="1" max="10" step="1" required>
+        <span class="ratingNumber" id="ratingValue">5</span>
 
-        <button type="formSubmit">Submit Form</button>
+        <button type="submitForm">Click Here to Submit Form</button>
     </form>
 
-    <p class="errorMessage">Passwords do not match. Please try again.</p>
-    <p class="errorMessage">Please enter a valid email address ending with @byui.edu.</p>
+    <p class="errorMessage" id="error-message" style="display: none;">Error message placeholder</p>
 
-    <script src="scripts/getdates.js"></script>
-  </body>
+    <script src="scripts/errormessages.js"></script>
+</body>
 </html>

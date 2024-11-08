@@ -146,3 +146,28 @@ footer {
   color: red; 
   display: none;
 }
+
+.userpassForm {
+  display: grid;
+  margin: 20%;
+}
+
+.formLabel {
+  margin-top: 15px;
+  grid-column: 1;
+}
+
+.ratingBar {
+  width: 50%;
+  grid-column: 1;
+}
+
+.ratingNumber {
+  grid-column: 2;
+  margin-bottom: 20px;
+  margin-left: -100px;
+}
+
+.formInput {
+  grid-column: 1;
+}
