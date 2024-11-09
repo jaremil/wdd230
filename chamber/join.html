@@ -40,7 +40,7 @@
 
   <body>
     <h2>Submit Your Details</h2>
-    <form method="get" action="thankyou.html">
+    <form class="joinForm" method="get" action="thankyou.html">
         <label for="name">First Name:</label>
         <input type="text" placeholder="John" id="firstName" name="name" required>
 
@@ -48,43 +48,37 @@
         <input type="text" placeholder="Doe" id="lastName" name="name" required>
 
         <label for="name">Position:</label>
-        <input type="text" placeholder="Title" id="position" name="name" pattern="" required>
-        The applicant's title or position within their organization, name and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression.
+        <input type="text" placeholder="Title" id="position" name="position" pattern="[A-Za-z\s-]{7,}" required>
         
         <label for="email">Email:</label>
-        <input type="email" placeholder="Forename Surname" id="email" name="email" required>
-        An contact email address, email type, required, name, id, and placeholder which contains an example email input.
+        <input type="email" placeholder="example@example.com" id="email" name="email" required>
 
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Forename Surname" id="email" name="email" required>
-        A mobile phone number, telephone type, required, name, and id.
+        <label for="phone">Mobile Phone:</label>
+        <input type="tel" placeholder="123-456-7890" id="phone" name="phone" pattern="\d{3}[-\s]?\d{3}[-\s]?\d{4}"  required>
 
-        <label for="name">Last Name:</label>
-        <input type="text" placeholder="Forename Surname" id="name" name="name" required>
-        The business/organization's name, text type, required, name, and id.
-        
-        <label for="name">Last Name:</label>
-        <input type="text" placeholder="Forename Surname" id="name" name="name" required>
-        A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level. There are four membership levels.
+        <label for="organization">Organization Name:</label>
+        <input type="text" placeholder="Company Name" id="organization" name="organization" required>
 
-        <label for="name">Last Name:</label>
-        <input type="text" placeholder="Forename Surname" id="name" name="name" required>
-        NP Membership is for non profit organizations and there is no fee.
-        Bronze Membership
-        Silver Membership
-        Gold Membership
-
-        <label for="name">Last Name:</label>
-        <input type="text" placeholder="Forename Surname" id="name" name="name" required>
-        A business/organization's description, text area, name, and id.
-
-        <label for="name">Last Name:</label>
-        <input type="text" placeholder="Forename Surname" id="name" name="name" required>
-        An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field.``
+        <label for="membership">Membership Level:</label>
+        <select id="membership" name="membership" required>
+            <option value="">Select Membership Level</option>
+            <option value="np">NP Membership (Non-Profit, No Fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+        </select>
+      
+        <label for="description">Organization Description:</label>
+        <textarea id="description" name="description" placeholder="Describe your organization" required></textarea>
+      
+        <input type="hidden" id="timestamp" name="timestamp">
+        <script>
+            document.getElementById('timestamp').value = Date.now();
+        </script>
     </form>
 
     <form>
-        <button type="submit">Submit</button>
+        <button class="joinButton" type="submit">Submit</button>
     </form>
 
     <footer>

@@ -28,3 +28,15 @@
     text-align: center;
   }
 }
+
+.joinForm {
+  display: grid;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.joinButton {
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
