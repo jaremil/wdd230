@@ -21,6 +21,23 @@
     <meta name="twitter:description" content="WDD 230 - Web Frontend Development, Jade Miller, The Chamber of Commerce Join Page" >
   </head>
 
+  <header>
+    <h1>Idaho Falls Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a class="navBar" href="home.html">Home</a></li>
+        <li><a class="navBar" href="discover.html">Discover</a></li>
+        <li><a class="navBar" href="home.html">Directory</a></li>
+        <li><a class="navBar" href="home.html">Join</a></li>
+      </ul>
+    </nav>
+    <picture>
+      <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
+      <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
+      <img class="hero" src="images/idahofalls.webp" alt="hero" />
+    </picture>
+  </header>
+
   <body>
     <h2>Submit Your Details</h2>
     <form method="get" action="thankyou.html">
@@ -32,7 +49,7 @@
 
         <label for="name">Position:</label>
         <input type="text" placeholder="Title" id="position" name="name" pattern="" required>
-        The applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression.
+        The applicant's title or position within their organization, name and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression.
         
         <label for="email">Email:</label>
         <input type="email" placeholder="Forename Surname" id="email" name="email" required>
@@ -69,6 +86,10 @@
     <form>
         <button type="submit">Submit</button>
     </form>
+
+    <footer>
+      <p class="footerText">&copy; 2024 this is a fake website</p>
+    </footer>
 
   </body>
   <script scr="register.js"></script>
