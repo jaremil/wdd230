@@ -38,7 +38,7 @@
             "title":"Design Principles Document"
           }
         ]
-    }
+    },
     {
         "lesson": "05",
         "links": [
@@ -51,7 +51,7 @@
             "title":"Design Principles Document"
           }
         ]
-    }
+    },
     {
         "lesson": "06",
         "links": [
@@ -64,7 +64,7 @@
             "title":"Design Principles Document"
           }
         ]
-    }
+    },
     {
         "lesson": "07",
         "links": [
@@ -77,7 +77,7 @@
             "title":"Design Principles Document"
           }
         ]
-    }
+    },
     {
         "lesson": "08",
         "links": [
@@ -90,7 +90,7 @@
             "title":"Design Principles Document"
           }
         ]
-    }
+    },
     {
         "lesson": "09",
         "links": [
@@ -103,7 +103,7 @@
             "title":"Design Principles Document"
           }
         ]
-    }
+    },
     {
         "lesson": "10",
         "links": [
@@ -117,4 +117,5 @@
           }
         ]
     }
+    ]
 }
