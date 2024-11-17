@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
+    <meta name="msapplication-TitleImage" content="/images/favicon.ico" >
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" >
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <meta name="msapplication-TileImage" content="/images/favicon.ico" >
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jade Miller - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Jade Miller - WDD 230 - Web Frontend Development" >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="/images/favicon.ico" >
+    <meta property="og:url" content="https://jaremil.github.io/wdd230/" >
+    <meta property="og:type" content="website" >
+    <meta name="description" content="WDD 230 - Web Frontend Development, Jade Miller, The Chamber of Commerce" >
+    <meta name="twitter:title" content="Jade Miller - WDD 230 - Web Frontend Development" >
+    <meta name="twitter:description" content="WDD 230 - Web Frontend Development, Jade Miller, Directory" >
+  </head>
+  <body>
+    <header>
+      <h1>Idaho Falls Chamber of Commerce</h1>
+      <nav>
+        <ul>
+          <li><a class="navBar" href="home.html">Home</a></li>
+          <li><a class="navBar" href="discover.html">Discover</a></li>
+          <li><a class="navBar" href="home.html">Directory</a></li>
+          <li><a class="navBar" href="home.html">Join</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
+        <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
+        <img class="hero" src="images/idahofalls.webp" alt="hero" />
+      </picture>
+    </header>
+    
+          <button id="toggleView">Toggle View</button>
+          <main id="memberContainer" class="grid-view"></main>
+    
+    <footer>
+      <p class="footerText">&copy; 2024 this is a fake website</p>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+
+  </body>
+</html>

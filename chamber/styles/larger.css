@@ -44,3 +44,43 @@
 .joinTitle {
   margin-top: 50px;
 }
+
+/* directory */
+
+#memberContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-view .member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-view .member {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Alpha Tech Solutions",
+      "address": "123 Tech Lane, Silicon City, TX",
+      "phone": "123-456-7890",
+      "website": "https://alphatech.com",
+      "image": "alpha.png",
+      "membershipLevel": "Gold",
+      "description": "Leading provider of tech solutions and IT services."
+    },
+    {
+      "name": "Beta Health Group",
+      "address": "456 Wellness Drive, Caretown, CA",
+      "phone": "987-654-3210",
+      "website": "https://betahealth.com",
+      "image": "beta.png",
+      "membershipLevel": "Platinum",
+      "description": "Specializing in health and wellness services."
+    },
+    {
+      "name": "Gamma Retailers",
+      "address": "789 Shopping Blvd, Mall City, NY",
+      "phone": "555-123-4567",
+      "website": "https://gammaretailers.com",
+      "image": "gamma.png",
+      "membershipLevel": "Silver",
+      "description": "Your one-stop shop for everyday needs."
+    },
+    {
+      "name": "Delta Financial Group",
+      "address": "101 Wealth Ave, Moneytown, FL",
+      "phone": "222-333-4444",
+      "website": "https://deltafinancial.com",
+      "image": "delta.png",
+      "membershipLevel": "Gold",
+      "description": "Expert financial planning and investment services."
+    },
+    {
+      "name": "Epsilon Energy",
+      "address": "202 Powerline St, Green City, CO",
+      "phone": "888-777-6666",
+      "website": "https://epsilonenergy.com",
+      "image": "epsilon.png",
+      "membershipLevel": "Platinum",
+      "description": "Renewable energy solutions for a sustainable future."
+    },
+    {
+      "name": "Zeta Logistics",
+      "address": "303 Freight Rd, Truckville, NV",
+      "phone": "111-222-3333",
+      "website": "https://zetalogistics.com",
+      "image": "zeta.png",
+      "membershipLevel": "Bronze",
+      "description": "Reliable and fast logistics and transportation services."
+    },
+    {
+      "name": "Eta Education",
+      "address": "404 Learning Blvd, Campus City, MA",
+      "phone": "444-555-6666",
+      "website": "https://etaeducation.com",
+      "image": "eta.png",
+      "membershipLevel": "Gold",
+      "description": "Innovative learning solutions for schools and colleges."
+    }
+  ]  
