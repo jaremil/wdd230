@@ -98,3 +98,30 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+/* Banner */
+.banner {
+  background-color: var(--second-color);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.banner-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 20px;
+}

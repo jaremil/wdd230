@@ -39,6 +39,11 @@
     </header>
 
     <main>
+     <div id="chamber-banner" class="banner">
+       <span class="banner-text">Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 PM!</span>
+        <button id="close-banner" class="close-btn">❌</button>
+      </div>
+
       <h2>Site Plan</h2>
       <div class="hero">
         <a href="index.html" class="cta-button">Join the Chamber</a>
@@ -80,19 +85,6 @@
         <button onclick="calculateWindChill()">Calculate Wind Chill</button>
         
         <h2>Wind Chill Index: <span id="wind-chill"></span></h2>
-
-        <script>function calculateWindChill() {
-            const temperature = parseFloat(document.getElementById('temperature').textContent);
-            const windSpeed = parseFloat(document.getElementById('wind-speed').textContent);
-        
-            if (temperature <= 50 && windSpeed > 3) {
-                const windChill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
-                document.getElementById('wind-chill').textContent = windChill.toFixed(2);
-            } else {
-                document.getElementById('wind-chill').textContent = 'N/A';
-            }
-        }</script>
-  
       </section>
 
       <section class="business-spotlights">
@@ -125,6 +117,6 @@
     <footer>
       <p class="footerText">&copy; 2024 this is a fake website</p>
     </footer>
-
+  <script src="scripts/windchill.js"></script>
   </body>
 </html>
