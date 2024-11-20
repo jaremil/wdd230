@@ -118,7 +118,7 @@ h3 {
   font-size: 25px;
 }
 
-p {
+p, span{
   font-size: 20px;
 }
 
@@ -170,4 +170,16 @@ footer {
 
 .formInput {
   grid-column: 1;
+}
+
+.iconImg {
+  width: 50px;
+}
+
+#weather-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;  display: flex;
+  justify-content: center;
+  align-items: center;
 }

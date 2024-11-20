@@ -43,3 +43,30 @@ function displayLinks(weeks) {
 }
 
 getLinks();
+
+
+// open weather API
+
+// API KEY: 7590dbb49a635877ec7bee7393a49b2b
+
+document.addEventListener('DOMContentLoaded', () => {
+  const API_URL = 'https://api.openweathermap.org/data/2.5/weather?lat=43.83&lon=-111.79&appid=7590dbb49a635877ec7bee7393a49b2b';
+  const weatherCard = document.getElementById('weather-card');
+  const kelvinFahrenheit = (kelvin) => ((kelvin - 273.15) * 9 / 5 + 32).toFixed(2);
+
+  fetch(API_URL)
+      .then(response => response.json()) 
+      .then(data => {
+          const iconId = data.weather[0].icon;
+          const temperatureF = Math.round(kelvinFahrenheit(data.main.temp));
+          const weatherDescription = data.weather[0].description;
+
+          const weatherHTML = `
+              <img class="iconImg" src="https://openweathermap.org/img/wn/${iconId}.png" alt="weather icon">
+              <span class="weatherText">${temperatureF}°F</span>
+              <span class="weatherText"> - </span>
+              <span class="weatherText">${weatherDescription}</span>
+          `;
+          weatherCard.innerHTML = weatherHTML;
+      });
+});
