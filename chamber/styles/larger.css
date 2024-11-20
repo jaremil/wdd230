@@ -1,7 +1,7 @@
-/* Big Changes */
+/* discovery */
 
 @media (min-width: 600px) {
-  main {
+  .discoverMain {
     display: grid;
     grid-template-columns: 25% 75%;
     margin-left: 20px;
@@ -100,7 +100,7 @@ a:hover {
 }
 
 
-/* Banner */
+/* banner */
 .banner {
   background-color: var(--second-color);
   color: white;
