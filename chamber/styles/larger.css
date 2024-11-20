@@ -1,14 +1,8 @@
-:root {
-  --main-color: #320e3b;
-  --second-color: #D8DFFE;
-  --text-color: #ffffff;
-  --paragraph-color: black;
-  --paragraph-font: Arial, Helvetica, sans-serif;
-}
+
 
 .cta-button {
   background-color: var(--second-color);
-  color: var(--text-color);
+  color: var(--main-color);
   padding: 10px 20px;
   text-decoration: none;
   font-family: var(--paragraph-font);
@@ -54,7 +48,7 @@
   background-position: center;
   padding: 50px 20px;
   text-align: center;
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 /* discovery */
@@ -113,7 +107,7 @@ button {
   margin-top: 60px;
   width: 40%;
   background-color: var(--second-color);
-  color: var(--text-color);
+  color: var(--main-color);
   padding: 10px 20px;
   text-decoration: none;
   font-family: var(--paragraph-font);
@@ -139,7 +133,7 @@ button:hover {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
-  background-color: white;
+  background-color: var(--nav-color);
   text-align: center;
 }
 
@@ -153,7 +147,7 @@ button:hover {
 /* banner */
 .banner {
   background-color: var(--second-color);
-  color: white;
+  color: var(--main-color);
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -174,4 +168,8 @@ button:hover {
   border: none;
   padding: 0;
   width: 20px;
+}
+
+.webTitle {
+  color: var(--nav-color);
 }
