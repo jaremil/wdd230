@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/medium.css" >
     <title>Idaho Falls Chamber of Commerce</title>
   </head>
+
   <body>
     <header>
       <h1 class="webTitle">Idaho Falls Chamber of Commerce</h1>
@@ -29,15 +30,18 @@
         </ul>
       </nav>
       <picture>
-        <source media="(min-width:400px)" srcset="images/idahofalls.webp" >
-        <source media="(max-width:4000px)" srcset="images/idahofalls.webp" >
-        <img class="hero" src="images/idahofalls.webp" alt="hero" >
+        <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
+        <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
+        <img class="hero" src="images/idahofalls.webp" alt="hero" />
       </picture>
     </header>
 
     <main>
-     <div id="chamber-banner" class="banner">
-       <span class="banner-text">Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 PM!</span>
+      <div id="chamber-banner" class="banner">
+        <span class="banner-text"
+          >Join us for the Chamber of Commerce Meet and Greet on Wednesday at
+          7:00 PM!</span
+        >
         <button id="close-banner" class="close-btn">❌</button>
       </div>
 
@@ -70,12 +74,12 @@
       <section class="weather">
         <h2>Current Weather Conditions</h2>
         <div>
-            <p>Temperature: <span id="temperature">30</span></p> 
-            <p>Wind Speed: <span id="wind-speed">10</span></p> 
+          <p>Temperature: <span id="temperature">30</span></p>
+          <p>Wind Speed: <span id="wind-speed">10</span></p>
         </div>
-        
+
         <button onclick="calculateWindChill()">Calculate Wind Chill</button>
-        
+
         <h2>Wind Chill Index: <span id="wind-chill"></span></h2>
       </section>
 
@@ -105,10 +109,11 @@
         <a href="index.html" class="cta-button">Become a Member</a>
       </section>
     </main>
-    
+
     <footer>
       <p class="footerText">&copy; 2024 this is a fake website</p>
     </footer>
-  <script src="scripts/windchill.js"></script>
+
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>

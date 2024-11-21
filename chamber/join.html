@@ -18,65 +18,110 @@
     <title>Idaho Falls Chamber of Commerce</title>
   </head>
 
-  <header>
-    <h1 class="webTitle">Idaho Falls Chamber of Commerce</h1>
-    <nav>
-      <ul>
-        <li><a class="navBar" href="index.html">Home</a></li>
-        <li><a class="navBar" href="discover.html">Discover</a></li>
-        <li><a class="navBar" href="directory.html">Directory</a></li>
-        <li><a class="navBar" href="join.html">Join</a></li>
-      </ul>
-    </nav>
-    <picture>
-      <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
-      <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
-      <img class="hero" src="images/idahofalls.webp" alt="hero" />
-    </picture>
-  </header>
-
   <body>
-    <h2 class="joinTitle">Submit Your Details</h2>
-    <form class="joinForm" method="get" action="thankyou.html">
+    <header>
+      <h1 class="webTitle">Idaho Falls Chamber of Commerce</h1>
+      <nav>
+        <ul>
+          <li><a class="navBar" href="index.html">Home</a></li>
+          <li><a class="navBar" href="discover.html">Discover</a></li>
+          <li><a class="navBar" href="directory.html">Directory</a></li>
+          <li><a class="navBar" href="join.html">Join</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
+        <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
+        <img class="hero" src="images/idahofalls.webp" alt="hero" />
+      </picture>
+    </header>
+
+    <main>
+      <h2 class="joinTitle">Submit Your Details</h2>
+      <form class="joinForm" method="get" action="thankyou.html">
         <label for="name">First Name:</label>
-        <input type="text" placeholder="John" id="firstName" name="name" required>
+        <input
+          type="text"
+          placeholder="John"
+          id="firstName"
+          name="name"
+          required
+        />
 
         <label for="name">Last Name:</label>
-        <input type="text" placeholder="Doe" id="lastName" name="name" required>
+        <input
+          type="text"
+          placeholder="Doe"
+          id="lastName"
+          name="name"
+          required
+        />
 
         <label for="name">Position:</label>
-        <input type="text" placeholder="Title" id="position" name="position" pattern="[A-Za-z\s-]{7,}" required>
-        
+        <input
+          type="text"
+          placeholder="Title"
+          id="position"
+          name="position"
+          pattern="[A-Za-z\s-]{7,}"
+          required
+        />
+
         <label for="email">Email:</label>
-        <input type="email" placeholder="example@example.com" id="email" name="email" required>
+        <input
+          type="email"
+          placeholder="example@example.com"
+          id="email"
+          name="email"
+          required
+        />
 
         <label for="phone">Mobile Phone:</label>
-        <input type="tel" placeholder="123-456-7890" id="phone" name="phone" pattern="\d{3}[-\s]?\d{3}[-\s]?\d{4}"  required>
+        <input
+          type="tel"
+          placeholder="123-456-7890"
+          id="phone"
+          name="phone"
+          pattern="\d{3}[-\s]?\d{3}[-\s]?\d{4}"
+          required
+        />
 
         <label for="organization">Organization Name:</label>
-        <input type="text" placeholder="Company Name" id="organization" name="organization" required>
+        <input
+          type="text"
+          placeholder="Company Name"
+          id="organization"
+          name="organization"
+          required
+        />
 
         <label for="membership">Membership Level:</label>
         <select id="membership" name="membership" required>
-            <option value="">Select Membership Level</option>
-            <option value="np">NP Membership (Non-Profit, No Fee)</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
+          <option value="">Select Membership Level</option>
+          <option value="np">NP Membership (Non-Profit, No Fee)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
         </select>
-      
-        <label for="description">Organization Description:</label>
-        <textarea id="description" name="description" placeholder="Describe your organization" required></textarea>
-      
-        <input type="hidden" id="timestamp" name="timestamp">
-        <script>
-            document.getElementById('timestamp').value = Date.now();
-        </script>
-    </form>
 
-    <form>
+        <label for="description">Organization Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Describe your organization"
+          required
+        ></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+        <script>
+          document.getElementById("timestamp").value = Date.now();
+        </script>
+      </form>
+
+      <form>
         <button class="joinButton" type="submit">Submit</button>
-    </form>
+      </form>
+    </main>
 
     <footer>
       <p class="footerText">&copy; 2024 this is a fake website</p>
