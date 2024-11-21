@@ -1,0 +1,136 @@
+/* home */
+
+.hero {
+  width: 100%;
+  margin-top: -2%;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.weather {
+  text-align: center;
+}
+
+.business-spotlights {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calWindchill {
+  margin-top: 5%;
+}
+
+.windResult {
+  font-size: 50%;
+  color: black;
+}
+
+/* discovery */
+
+@media (max-width: 750px) {
+  .sidebarTitle {
+    text-align: center;
+  }
+  .sidebarText {
+    text-align: center;
+  }
+}
+
+.joinForm {
+  display: grid;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.joinButton {
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.joinTitle {
+  margin-top: 50px;
+}
+
+.ifImg {
+  width: 100%;
+}
+
+/* directory */
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 40%;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover {
+  background-color: #7f96ff;
+  color: #ffffff;
+}
+
+#memberContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-view .member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--nav-color);
+  text-align: center;
+}
+
+.list-view {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* banner */
+.banner {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.banner-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 20px;
+}
+
+.webTitle {
+  color: var(--nav-color);
+}
