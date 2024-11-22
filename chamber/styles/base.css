@@ -117,7 +117,7 @@ button:hover {
 
   footer {
     display: grid;
-    grid-row: 5px 5px 5px;
+    grid-row: 3;
     text-align: center;
   }
 }
