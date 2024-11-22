@@ -4,7 +4,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt. 1",
       "phone": "(111)111-1111",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Gold",
       "description": "Leading provider of tech solutions and IT services."
     },
@@ -13,7 +13,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt. 2",
       "phone": "(222)222-2222",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Platinum",
       "description": "Specializing in health and wellness services."
     },
@@ -22,7 +22,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt. 3",
       "phone": "(333)333-3333",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Silver",
       "description": "Your one-stop shop for everyday needs."
     },
@@ -31,7 +31,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt.4",
       "phone": "(444)444-4444",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Gold",
       "description": "Expert financial planning and investment services."
     },
@@ -40,7 +40,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt. 5",
       "phone": "(555)555-5555",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Platinum",
       "description": "Renewable energy solutions for a sustainable future."
     },
@@ -49,7 +49,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt. 6",
       "phone": "(666)666-6666",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Bronze",
       "description": "Reliable and fast logistics and transportation services."
     },
@@ -58,7 +58,7 @@
       "address": "101 E Viking St, Rexburg, ID 83460 Apt. 7",
       "phone": "(777)777-7777",
       "website": "https://jaremil.github.io/wdd230/",
-      "image": "company.png",
+      "image": "company.webp",
       "membershipLevel": "Gold",
       "description": "Innovative learning solutions for schools and colleges."
     }
