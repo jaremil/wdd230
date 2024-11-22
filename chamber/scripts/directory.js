@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const memberElement = document.createElement("div");
         memberElement.className = "member";
         memberElement.innerHTML = `
-          <img src="./images/${member.image}" alt="${member.name}">
+          <img class="directoryImg" src="./images/${member.image}" alt="${member.name}">
           <div>
             <h2>${member.name}</h2>
             <p><strong>Address:</strong> ${member.address}</p>

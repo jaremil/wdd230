@@ -105,7 +105,29 @@ button:hover {
   width: 40%;
 }
 
+.directoryImg:hover {
+    opacity: 0.3;
+}
 
+@media (max-width: 750px) {
+  #toggleView {
+    display: none;
+  }
+
+  .grid-view {
+    display: none;
+  }
+
+  .list-view {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  div.member {
+    margin-top: 25%;
+  }
+}
 
 /* banner */
 .banner {
