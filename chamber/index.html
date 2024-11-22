@@ -24,24 +24,26 @@
     <link rel="stylesheet" href="styles/medium.css" >
     <title>Idaho Falls Chamber of Commerce</title>
   </head>
-
+  
   <body>
     <header>
       <h1 class="webTitle">Idaho Falls Chamber of Commerce</h1>
-      <nav>
-        <ul>
+      <button id="menu" class="open"></button>
+
+    <nav>
+      <ul class="heading">
           <li><a class="navBar" href="index.html">Home</a></li>
           <li><a class="navBar" href="discover.html">Discover</a></li>
           <li><a class="navBar" href="directory.html">Directory</a></li>
           <li><a class="navBar" href="join.html">Join</a></li>
         </ul>
-      </nav>
-      <picture>
-        <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
-        <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
-        <img class="hero" src="images/idahofalls.webp" alt="hero" />
-      </picture>
-    </header>
+    </nav>
+    <picture>
+      <source media="(min-width:400px)" srcset="images/idahofalls.webp" />
+      <source media="(max-width:4000px)" srcset="images/idahofalls.webp" />
+      <img class="hero" src="images/idahofalls.webp" alt="hero" />
+    </picture>
+  </header>
 
     <main>
       <div id="chamber-banner" class="banner">
@@ -126,5 +128,5 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/modified.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/hamburger.js"></script>
   </body>
-</html>
