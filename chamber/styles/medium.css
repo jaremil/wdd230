@@ -195,3 +195,27 @@ ul {
 .open li {
   display: block;
 }
+
+@media (min-width: 800px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heading li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
