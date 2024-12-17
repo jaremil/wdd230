@@ -1,0 +1,205 @@
+/* Title */
+
+#pageTitle {
+  font-size: 600%;
+  text-align: center;
+}
+
+/* Navigation */
+
+.navBar {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+} 
+
+.navBar:hover::after {
+  animation: underline_nav 0.4s ease-in-out forwards;
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+} 
+
+@keyframes underline_nav {
+  from {
+    width: 0;
+    background-color: var(--dark-color);
+  }
+  to {
+    width: 100%;
+    background-color: var(--medium-color);
+  }
+}
+
+/* Navigation Smooth Scroll to Sections */
+
+#section1 {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Images */
+
+
+
+/* Body sections */
+
+.website-card {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* filters*/
+
+.filterToggle {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border: solid;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  color: white;
+  background-color: var(--light-color);
+}
+
+#changeToggle {
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  text-align: center;
+  width: 60%;
+}
+
+#apply-filters {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+/* Color theme changes */
+
+/* Dark */
+
+body[data-theme="dark"] {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+body[data-theme="dark"] #pageTitle {
+  color: var(--light-color);
+}
+
+body[data-theme="dark"] .navBar {
+  color: var(--light-color);
+}
+
+body[data-theme="dark"] .navBar:hover {
+  color: var(--medium-color);
+}
+
+body[data-theme="dark"] .filterToggle {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+body[data-theme="dark"] .filterToggle:hover {
+  border-color: var(--medium-color);
+  color: var(--medium-color);
+}
+
+body[data-theme="dark"] .website-card {
+  border: 1px solid var(--light-color);
+}
+
+body[data-theme="dark"] footer {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* Light */
+
+body[data-theme="light"] {
+  background-color: white;
+  color: var(--dark-color);
+}
+
+body[data-theme="light"] #pageTitle {
+  color: var(--dark-color);
+}
+
+body[data-theme="light"] .navBar {
+  color: var(--dark-color);
+}
+
+body[data-theme="light"] .navBar:hover {
+  color: var(--bright-color);
+}
+
+body[data-theme="light"] .filterToggle {
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+body[data-theme="light"] .filterToggle:hover {
+  border-color: var(--bright-color);
+  background-color: white;
+  color: var(--bright-color);
+}
+
+body[data-theme="light"] .website-card {
+  border: 1px solid var(--dark-color);
+}
+
+body[data-theme="light"] footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.filterToggle {
+  color: white;
+}
+
+.navBar:hover {
+  color: var(--medium-color);
+}

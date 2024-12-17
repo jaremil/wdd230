@@ -1,0 +1,85 @@
+:root {
+  --light-color: #E2D9FF;
+  --bright-color: #0041CC;
+  --medium-color: #85ABFF;
+  --dark-color: #0A0129;
+  --heading-font: Arial, sans-serif;
+  --paragraph-font: "Trebuchet MS", sans-serif;
+}
+
+* {
+  padding: 0;
+}
+
+header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.socialButton_about {
+  width: 15%;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  border-radius: 30%;
+}
+
+main {
+  text-align: center;
+  margin: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  text-align: left;
+  margin-left: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+label {
+  font-family: var(--heading-font);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+p,
+span {
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+footer {
+  font-family: var(--heading-font);
+}
+
+.footer_text {
+  font-family: var(--heading-font);
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/general.css" >
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/sizing.css" >
+    <script src="scripts/app.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="scripts/smoothscroll.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <title>Photography Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="navBar" href="#missionStatement">Mission Statement</a>
+          </li>
+          <li>
+            <a class="navBar" href="#aboutPhotography">About Photography</a>
+          </li>
+          <li>
+            <a class="navBar" href="#searchFunctions">Search Pictures</a>
+          </li>
+        </ul>
+      </nav>
+        <h1 id="pageTitle">Photography Portfolio</h1>
+        <select id="changeToggle" class="filterToggle">
+          <option value="light">Light Mode</option>
+          <option value="dark">Dark Mode</option>
+        </select>
+    </header>
+
+    <main>
+      <section id="missionStatement">
+        <h2 class="mission_title">Mission Statement</h2>
+        <p>
+          Our mission is to capture and share the beauty, diversity, and emotion of the world through the lens of creativity. Every photograph tells a unique story, and we strive to create compelling visual narratives that inspire, evoke emotion, and connect people across cultures and perspectives. Through our work, we aim to celebrate life’s fleeting moments—both monumental and everyday—with authenticity and artistic excellence. Whether it’s landscapes, portraits, or candid moments, our goal is to transform ordinary scenes into extraordinary experiences, while providing a platform that reflects our passion for storytelling and the art of photography.
+        </p>
+      </section>
+
+      <section id="aboutPhotography">
+        <h2 class="about_title">About Photography</h2>
+        <p>
+          Photography is the practice of capturing moments in time through the interplay of light, subject, and perspective. Its origins date back to experiments with light and optics, such as the camera obscura, a device used by artists to project images onto surfaces. The invention of photography as we know it began in the early 19th century, when innovators like Joseph Nicéphore Niépce and Louis Daguerre discovered ways to chemically record these projections permanently. From the early daguerreotypes to modern digital photography, this art form has revolutionized the way we document history, tell stories, and express creativity. Today, photography remains a powerful medium for communication and artistic exploration, shaping the way we share and preserve our experiences.
+        </p>
+      </section>
+
+      <section id="searchFunctions">
+        <h2>Search Through Different Pictures</h2>
+        <div>
+          <label for="category-filter">Filter by Category:</label>
+          <select id="category-filter" class="filterToggle">
+            <option value="">All</option>
+            <option value="Personal">Personal</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Content">Content</option>
+            <option value="Utility">Utility</option>
+          </select>
+
+          <label for="technology-filter">Filter by Technology:</label>
+          <select id="technology-filter" class="filterToggle">
+            <option value="">All</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+            <option value="Node.js">Node.js</option>
+            <option value="C#">C#</option>
+          </select>
+
+          <button id="apply-filters" class="filterToggle">Apply Filters</button>
+        </div>
+        <div id="websites-container"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_text">
+        <p class="footer_text">Phone: (123) 456-7890</p>
+        <p class="footer_text">Email: fakeemail@gmail.com</p>
+      </div>
+    </footer>
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>
