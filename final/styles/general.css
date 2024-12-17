@@ -1,14 +1,29 @@
 /* Title */
 
 #pageTitle {
-  font-size: 600%;
+  /* font-size: 600%; */
   text-align: center;
 }
 
 /* Navigation */
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 5%;
+  
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* nav ul li a {
+
+}  */
+
 .navBar {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-family: var(--heading-font);
   font-weight: 500;
   text-decoration: none;
@@ -16,27 +31,8 @@
   display: inline-block;
   padding: 10px 20px;
   transition: color 0.3s ease;
-  color: white;
+  color: var(--white-color);
 }
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 25px auto 0;
-  padding: 0;
-  font-size: 15px;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-} 
 
 .navBar:hover::after {
   animation: underline_nav 0.4s ease-in-out forwards;
@@ -46,7 +42,6 @@ nav ul li a {
   left: 0;
   bottom: -2px;
   height: 2px;
-  width: 0;
   transition: width 0.4s ease-in-out;
 } 
 
@@ -68,7 +63,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 /* Images */
@@ -85,7 +80,7 @@ nav ul li a {
 /* filters*/
 
 .filterToggle {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-family: var(--heading-font);
   font-weight: 500;
   text-decoration: none;
@@ -94,26 +89,20 @@ nav ul li a {
   border: solid;
   padding: 10px 20px;
   transition: color 0.3s ease;
-  color: white;
-  background-color: var(--light-color);
 }
 
 #changeToggle {
   font-weight: bold;
-  font-size: 15px;
+  /* font-size: 15px; */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
+  margin: auto;
   text-align: center;
   width: 60%;
 }
 
 #apply-filters {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin: auto;
 }
 
 /* Color theme changes */
@@ -159,7 +148,7 @@ body[data-theme="dark"] footer {
 /* Light */
 
 body[data-theme="light"] {
-  background-color: white;
+  background-color: var(--white-color);
   color: var(--dark-color);
 }
 
@@ -176,14 +165,14 @@ body[data-theme="light"] .navBar:hover {
 }
 
 body[data-theme="light"] .filterToggle {
-  border-color: black;
-  background-color: white;
-  color: black;
+  border-color: var(--black-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 body[data-theme="light"] .filterToggle:hover {
   border-color: var(--bright-color);
-  background-color: white;
+  background-color: var(--white-color);
   color: var(--bright-color);
 }
 
@@ -197,7 +186,7 @@ body[data-theme="light"] footer {
 }
 
 .filterToggle {
-  color: white;
+  color: var(--white-color);
 }
 
 .navBar:hover {
