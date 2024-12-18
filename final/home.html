@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="styles/general.css" >
     <link rel="stylesheet" href="styles/normalize.css" >
     <link rel="stylesheet" href="styles/sizing.css" >
-    <script src="scripts/app.js"></script>
-    <script src="scripts/data.js"></script>
-    <script src="scripts/filter.js"></script>
-    <script src="scripts/smoothscroll.js" defer></script>
-    <script src="scripts/theme.js" defer></script>
     <title>Photography Portfolio</title>
   </head>
   <body>
@@ -35,6 +30,7 @@
         </ul>
       </nav>
         <h1 id="pageTitle">Photography Portfolio</h1>
+        <label for="changeToggle">Change Theme</label> 
         <select id="changeToggle" class="filterToggle">
           <option value="light">Light Mode</option>
           <option value="dark">Dark Mode</option>
@@ -63,21 +59,21 @@
           <label for="category-filter">Filter by Category:</label>
           <select id="category-filter" class="filterToggle">
             <option value="">All</option>
-            <option value="Personal">Personal</option>
-            <option value="Commercial">Commercial</option>
-            <option value="Content">Content</option>
-            <option value="Utility">Utility</option>
+            <option value="portrait">Portrait Photography</option>
+            <option value="landscape">Landscape Photography</option>
+            <option value="stillLife">Still Life Photography</option>
+            <option value="macro">Macro Photography</option>
           </select>
 
           <label for="technology-filter">Filter by Technology:</label>
           <select id="technology-filter">
             <option value="">All</option>
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="React">React</option>
-            <option value="Node.js">Node.js</option>
-            <option value="C#">C#</option>
+            <option value="warn">Warm Tones</option>
+            <option value="cool">Cool Tones</option>
+            <option value="blackWhite">Black and White</option>
+            <option value="vibrant">Vibrant Tones</option>
+            <option value="muted">Muted Tones</option>
+            <option value="pastel">Pastels</option>
           </select>
           <button id="apply-filters" class="filterToggle">Apply Filters</button>
         </div>
@@ -88,5 +84,9 @@
             <a class="attributionsLink" href="attributions.html">Click here to access Attributions Page</a>
     </footer>
     <script type="module" src="scripts/app.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="scripts/smoothscroll.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
   </body>
 </html>

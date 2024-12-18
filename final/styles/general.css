@@ -82,6 +82,10 @@ nav ul {
   list-style-type: none;
 }
 
+.changeToggle label {
+  text-decoration: transparent;
+}
+
 /* filters*/
 
 .filterToggle {
