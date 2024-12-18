@@ -5,12 +5,12 @@
   --bright-color: #0041CC;
   --dark-color: #0A0129;
   --black-color: #000;
-  --heading-font: Arial, sans-serif;
-  --paragraph-font: "Trebuchet MS", sans-serif;
+  --heading-font: Arial, Verdana, sans-serif;
+  --paragraph-font: "Trebuchet MS", Tahoma, sans-serif;
 }
 
 * {
-  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -41,39 +41,25 @@ main {
 
 h1,
 h2 {
-  font-family: var(--heading-font);
+  font-family: var(--heading-font, sans-serif);
   text-align: left;
   margin: auto;
   font-weight: bold;
 }
 
 label {
-  font-family: var(--heading-font);
+  font-family: var(--heading-font, sans-serif);
   display: block;
   margin: auto;
 }
 
-h2 {
-  font-family: var(--heading-font);
-  margin: 50px;
-  text-align: left;
-}
-
 p,
 span {
-  font-family: var(--paragraph-font);
+  font-family: var(--paragraph-font, sans-serif);
   margin: 25px;
   text-align: left;
 }
 
 footer {
-  font-family: var(--heading-font);
-}
-
-.footer_text {
-  font-family: var(--heading-font);
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
+  font-family: var(--heading-font, sans-serif);
 }

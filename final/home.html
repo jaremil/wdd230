@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="og:title" content="Photography Portraitio website to showcase photography" >
+    <meta name="og:type" content="website" >
+    <meta name="author" content="Jade Miller" >
+    <meta property="title" content="Photography Portfolio" >
+    <meta name="description" content="Explore stunning photography that captures moments, tells stories, and inspires. Discover portrait, landscape, and event photography by a professional photographer." >
+    <meta name="og:url" content="https://jaremil.github.io/wdd230/chamber/index.html" >
     <link rel="stylesheet" href="styles/general.css" >
     <link rel="stylesheet" href="styles/normalize.css" >
     <link rel="stylesheet" href="styles/sizing.css" >
@@ -11,7 +19,6 @@
     <script src="scripts/theme.js" defer></script>
     <title>Photography Portfolio</title>
   </head>
-
   <body>
     <header>
       <nav>
@@ -32,13 +39,14 @@
           <option value="light">Light Mode</option>
           <option value="dark">Dark Mode</option>
         </select>
+
     </header>
 
     <main>
       <section id="missionStatement">
         <h2 class="mission_title">Mission Statement</h2>
         <p>
-          Our mission is to capture and share the beauty, diversity, and emotion of the world through the lens of creativity. Every photograph tells a unique story, and we strive to create compelling visual narratives that inspire, evoke emotion, and connect people across cultures and perspectives. Through our work, we aim to celebrate life’s fleeting moments—both monumental and everyday—with authenticity and artistic excellence. Whether it’s landscapes, portraits, or candid moments, our goal is to transform ordinary scenes into extraordinary experiences, while providing a platform that reflects our passion for storytelling and the art of photography.
+          Our mission is to capture and share the beauty, diversity, and emotion of the world through the lens of creativity. Every photograph tells a unique story, and we strive to create compelling visual narratives that inspire, evoke emotion, and connect people across cultures and perspectives. Through our work, we aim to celebrate life's fleeting moments—both monumental and everyday—with authenticity and artistic excellence. Whether it's landscapes, portraits, or candid moments, our goal is to transform ordinary scenes into extraordinary experiences, while providing a platform that reflects our passion for storytelling and the art of photography.
         </p>
       </section>
 
@@ -62,7 +70,7 @@
           </select>
 
           <label for="technology-filter">Filter by Technology:</label>
-          <select id="technology-filter" class="filterToggle">
+          <select id="technology-filter">
             <option value="">All</option>
             <option value="HTML">HTML</option>
             <option value="CSS">CSS</option>
@@ -71,22 +79,13 @@
             <option value="Node.js">Node.js</option>
             <option value="C#">C#</option>
           </select>
-
           <button id="apply-filters" class="filterToggle">Apply Filters</button>
         </div>
         <div id="websites-container"></div>
       </section>
     </main>
     <footer>
-      <div class="footer_text">
-        <p class="footer_text">Phone: (123) 456-7890</p>
-        <p class="footer_text">Email: fakeemail@gmail.com</p>
-        <ul>
-          <li>
-            <a href="attributions.html">Attributions Page</a>
-          </li>
-        </ul>
-      </div>
+            <a class="attributionsLink" href="attributions.html">Click here to access Attributions Page</a>
     </footer>
     <script type="module" src="scripts/app.js"></script>
   </body>

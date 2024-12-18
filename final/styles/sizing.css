@@ -1,7 +1,6 @@
 @media (min-width: 1200px) {
    /*  p,
-  span,
-.footer_text {
+  span{
     font-size: 18px;
   }
   h1 {
@@ -14,8 +13,7 @@
 
 @media (max-width: 1200px) {
   /* p,
-  span,
-  .footer_text {
+  span {
   font-size: 16px;
   }
   h1 {
@@ -39,8 +37,7 @@
 
 @media (max-width: 450px) {
   /* p,
-  span,
-  .footer_text {
+  span{
   font-size: 12px;
   }
   h1 {

@@ -12,26 +12,20 @@ nav ul {
   justify-content: center;
   list-style: none;
   margin: 5%;
-  
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
 }
 
-/* nav ul li a {
-
-}  */
-
 .navBar {
   /* font-size: 20px; */
-  font-family: var(--heading-font);
+  font-family: var(--heading-font, sans-serif);
   font-weight: 500;
   text-decoration: none;
   position: relative;
   display: inline-block;
   padding: 10px 20px;
   transition: color 0.3s ease;
-  color: var(--white-color);
 }
 
 .navBar:hover::after {
@@ -48,11 +42,13 @@ nav ul {
 @keyframes underline_nav {
   from {
     width: 0;
-    background-color: var(--dark-color);
+    background-color: var(--dark-color, #0A0129);
+    color: var(--black-color, #000);
   }
   to {
     width: 100%;
-    background-color: var(--medium-color);
+    background-color: var(--medium-color, #85ABFF);
+    color: var(--bright-color, #0041CC);
   }
 }
 
@@ -77,11 +73,20 @@ nav ul {
   margin: 20px 0;
 }
 
+.attributionsLink {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 /* filters*/
 
 .filterToggle {
   /* font-size: 20px; */
-  font-family: var(--heading-font);
+  font-family: var(--heading-font, sans-serif);
   font-weight: 500;
   text-decoration: none;
   position: relative;
@@ -105,90 +110,91 @@ nav ul {
   margin: auto;
 }
 
+#technology-filter {
+  font-family: var(--heading-font, sans-serif);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border: solid;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
 /* Color theme changes */
 
-/* Dark */
-
-body[data-theme="dark"] {
-  background-color: var(--dark-color);
-  color: var(--light-color);
+body[data-theme="light"] .filterToggle:hover, 
+body[data-theme="light"] #technology-filter:hover, 
+body[data-theme="light"] #category-filter:hover {
+  background-color: var(--white-color, #FFFFFF);
+  border-color: var(--bright-color, #0041CC);
+  color: var(--bright-color, #0041CC);
 }
 
-body[data-theme="dark"] #pageTitle {
-  color: var(--light-color);
+body[data-theme="dark"] .filterToggle:hover, 
+body[data-theme="dark"] #technology-filter:hover, 
+body[data-theme="dark"] #category-filter:hover {
+  background-color: var(--dark-color, #0A0129);
+  border-color: var(--medium-color, #85ABFF);
+  color: var(--medium-color, #85ABFF);
 }
 
-body[data-theme="dark"] .navBar {
-  color: var(--light-color);
-}
-
-body[data-theme="dark"] .navBar:hover {
-  color: var(--medium-color);
-}
-
-body[data-theme="dark"] .filterToggle {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-body[data-theme="dark"] .filterToggle:hover {
-  border-color: var(--medium-color);
-  color: var(--medium-color);
-}
-
+body[data-theme="dark"] .filterToggle, 
+body[data-theme="dark"] #technology-filter, 
+body[data-theme="dark"] #category-filter,
 body[data-theme="dark"] .website-card {
-  border: 1px solid var(--light-color);
-}
-
-body[data-theme="dark"] footer {
-  background-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* Light */
-
-body[data-theme="light"] {
-  background-color: var(--white-color);
-  color: var(--dark-color);
-}
-
-body[data-theme="light"] #pageTitle {
-  color: var(--dark-color);
-}
-
-body[data-theme="light"] .navBar {
-  color: var(--dark-color);
-}
-
-body[data-theme="light"] .navBar:hover {
-  color: var(--bright-color);
-}
-
-body[data-theme="light"] .filterToggle {
-  border-color: var(--black-color);
-  background-color: var(--white-color);
-  color: var(--black-color);
-}
-
-body[data-theme="light"] .filterToggle:hover {
-  border-color: var(--bright-color);
-  background-color: var(--white-color);
-  color: var(--bright-color);
+  background-color: var(--dark-color, #0A0129);
+  border-color: var(--light-color, #E2D9FF);
+  color: var(--light-color, #E2D9FF);
 }
 
 body[data-theme="light"] .website-card {
-  border: 1px solid var(--dark-color);
+  background-color: var(--white-color, #FFFFFF);
+  border: 1px solid var(--dark-color, #0A0129);
+  color: var(--dark-color, #0A0129);
 }
 
-body[data-theme="light"] footer {
-  background-color: var(--dark-color);
-  color: var(--light-color);
+body[data-theme="light"] .filterToggle, 
+#technology-filter, 
+#category-filter {
+  background-color: var(--white-color, #FFFFFF);
+  border-color: var(--black-color, #000);
+  color: var(--black-color, #000);
 }
 
-.filterToggle {
-  color: var(--white-color);
+body[data-theme="light"],
+body[data-theme="light"] #pageTitle,
+body[data-theme="light"] .navBar
+ {
+  background-color: var(--white-color, #FFFFFF);
+  color: var(--dark-color, #0A0129);
 }
 
-.navBar:hover {
-  color: var(--medium-color);
+body[data-theme="dark"] .attributionsLink {
+  background-color: var(--light-color, #E2D9FF);
+  color: var(--dark-color, #0A0129);
+}
+
+body[data-theme="light"] .navBar:hover {
+  background-color: var(--white-color, #FFFFFF);
+  color: var(--bright-color, #0041CC);
+}
+
+body[data-theme="dark"] .attributionsLink:hover {
+  background-color: var(--light-color, #E2D9FF);
+  color: var(--bright-color, #0041CC);
+}
+
+body[data-theme="dark"],
+body[data-theme="dark"] #pageTitle,
+body[data-theme="dark"] .navBar,
+body[data-theme="light"] .attributionsLink {
+  background-color: var(--dark-color, #0A0129);
+  color: var(--light-color, #E2D9FF);
+}
+
+body[data-theme="dark"] .navBar:hover,
+body[data-theme="light"] .attributionsLink:hover  {
+  background-color: var(--dark-color, #0A0129);
+  color: var(--medium-color, #85ABFF);
 }
