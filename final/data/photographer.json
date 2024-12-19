@@ -1,0 +1,31 @@
+{
+    "photographers": [
+        { "name": "Ansel Adams", 
+        "category": "Film", 
+        "style": "Landscape photography" },
+        { "name": "Dorothea Lange", 
+        "category": "Film", 
+        "style": "Documentary photography" },
+        { "name": "Henri Cartier-Bresson", 
+        "category": "Film", 
+        "style": "Street photography" },
+        { "name": "Richard Avedon", 
+        "category": "Film", 
+        "style": "Documentary photography" },
+        { "name": "Vivian Maier", 
+        "category": "Film", 
+        "style": "Street photography" },
+        { "name": "Robert Capa", 
+        "category": "Film", 
+        "style": "Documentary photography" },
+        { "name": "Man Ray", 
+        "category": "Film", 
+        "style": "Street photography" },
+        { "name": "Sally Mann", 
+        "category": "Film", 
+        "style": "Landscape photography" },
+        { "name": "Jeff Wall", 
+        "category": "Digital", 
+        "style": "Street photography" }
+    ]
+}

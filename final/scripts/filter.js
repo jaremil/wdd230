@@ -1,30 +1,47 @@
-export function filterByCategory(websites, category) {
-  if (!Array.isArray(websites)) {
-    throw new Error("websites must be an array");
+async function loadPhotographers() {
+  try {
+      const response = await fetch('data/photographer.json');
+      const data = await response.json();
+      initializeFiltering(data.photographers);
+  } catch (error) {
+      console.error("Error loading the data:", error);
   }
-  return websites.filter((website) => website.category === category);
 }
 
-export function filterByTechnology(websites, technology) {
-  if (!Array.isArray(websites)) {
-    throw new Error("websites must be an array");
-  }
-  return websites.filter((website) =>
-    Array.isArray(website.technologies) &&
-    website.technologies.includes(technology)
-  );
+function displayPhotographers(photographers) {
+  const photographerList = document.getElementById("photographerList");
+  photographerList.innerHTML = '';  
+
+  photographers.forEach(photographer => {
+      const photographerCard = document.createElement("div");
+      photographerCard.classList.add("photographer-card");
+
+      photographerCard.innerHTML = `
+          <h3>${photographer.name}</h3>
+          <p><strong>Category:</strong> ${photographer.category}</p>
+          <p><strong>Style:</strong> ${photographer.style}</p>
+      `;
+      photographerList.appendChild(photographerCard);
+  });
 }
 
-export function getTechnologiesSummary(websites) {
-  if (!Array.isArray(websites)) {
-    throw new Error("websites must be an array");
-  }
-  return websites.reduce((acc, website) => {
-    if (Array.isArray(website.technologies)) {
-      website.technologies.forEach((tech) => {
-        acc[tech] = (acc[tech] || 0) + 1;
-      });
-    }
-    return acc;
-  }, {});
+function filterPhotographers(photographers) {
+  const categoryFilter = document.getElementById("categoryFilter").value;
+  const styleFilter = document.getElementById("styleFilter").value;
+
+  const filteredPhotographers = photographers.filter(photographer => {
+      const matchesCategory = categoryFilter ? photographer.category === categoryFilter : true;
+      const matchesStyle = styleFilter ? photographer.style === styleFilter : true;
+      return matchesCategory && matchesStyle;
+  });
+  displayPhotographers(filteredPhotographers);
 }
+
+function initializeFiltering(photographers) {
+  displayPhotographers(photographers);
+
+  document.getElementById("categoryFilter").addEventListener("change", () => filterPhotographers(photographers));
+  document.getElementById("styleFilter").addEventListener("change", () => filterPhotographers(photographers));
+}
+
+loadPhotographers();

@@ -29,12 +29,15 @@
           </li>
         </ul>
       </nav>
-        <h1 id="pageTitle">Photography Portfolio</h1>
-        <label for="changeToggle">Change Theme</label> 
-        <select id="changeToggle" class="filterToggle">
-          <option value="light">Light Mode</option>
-          <option value="dark">Dark Mode</option>
-        </select>
+
+      <h1 id="pageTitle">Photography Portfolio</h1>
+
+      <label for="changeToggle">Change Theme</label>
+
+      <select id="changeToggle" class="filterToggle">
+        <option value="light">Light Mode</option>
+        <option value="dark">Dark Mode</option>
+      </select>
 
     </header>
 
@@ -42,51 +45,70 @@
       <section id="missionStatement">
         <h2 class="mission_title">Mission Statement</h2>
         <p>
-          Our mission is to capture and share the beauty, diversity, and emotion of the world through the lens of creativity. Every photograph tells a unique story, and we strive to create compelling visual narratives that inspire, evoke emotion, and connect people across cultures and perspectives. Through our work, we aim to celebrate life's fleeting moments—both monumental and everyday—with authenticity and artistic excellence. Whether it's landscapes, portraits, or candid moments, our goal is to transform ordinary scenes into extraordinary experiences, while providing a platform that reflects our passion for storytelling and the art of photography.
+          Our mission is to capture and share the beauty, diversity, and emotion
+          of the world through the lens of creativity. Every photograph tells a
+          unique story, and we strive to create compelling visual narratives
+          that inspire, evoke emotion, and connect people across cultures and
+          perspectives. Through our work, we aim to celebrate life's fleeting
+          moments—both monumental and everyday—with authenticity and artistic
+          excellence. Whether it's landscapes, portraits, or candid moments, our
+          goal is to transform ordinary scenes into extraordinary experiences,
+          while providing a platform that reflects our passion for storytelling
+          and the art of photography.
         </p>
       </section>
 
       <section id="aboutPhotography">
         <h2 class="about_title">About Photography</h2>
         <p>
-          Photography is the practice of capturing moments in time through the interplay of light, subject, and perspective. Its origins date back to experiments with light and optics, such as the camera obscura, a device used by artists to project images onto surfaces. The invention of photography as we know it began in the early 19th century, when innovators like Joseph Nicéphore Niépce and Louis Daguerre discovered ways to chemically record these projections permanently. From the early daguerreotypes to modern digital photography, this art form has revolutionized the way we document history, tell stories, and express creativity. Today, photography remains a powerful medium for communication and artistic exploration, shaping the way we share and preserve our experiences.
+          Photography is the practice of capturing moments in time through the
+          interplay of light, subject, and perspective. Its origins date back to
+          experiments with light and optics, such as the camera obscura, a
+          device used by artists to project images onto surfaces. The invention
+          of photography as we know it began in the early 19th century, when
+          innovators like Joseph Nicéphore Niépce and Louis Daguerre discovered
+          ways to chemically record these projections permanently. From the
+          early daguerreotypes to modern digital photography, this art form has
+          revolutionized the way we document history, tell stories, and express
+          creativity. Today, photography remains a powerful medium for
+          communication and artistic exploration, shaping the way we share and
+          preserve our experiences.
         </p>
       </section>
 
-      <section id="searchFunctions">
-        <h2>Search Through Different Pictures</h2>
-        <div>
-          <label for="category-filter">Filter by Category:</label>
-          <select id="category-filter" class="filterToggle">
-            <option value="">All</option>
-            <option value="portrait">Portrait Photography</option>
-            <option value="landscape">Landscape Photography</option>
-            <option value="stillLife">Still Life Photography</option>
-            <option value="macro">Macro Photography</option>
+      <div class="container">
+        <h1>Photographer Filter</h1>
+
+        <div class="filters">
+          <select id="categoryFilter">
+            <option value="">Select Category</option>
+            <option value="Film">Film</option>
+            <option value="Digital">Digital</option>
           </select>
 
-          <label for="technology-filter">Filter by Technology:</label>
-          <select id="technology-filter">
-            <option value="">All</option>
-            <option value="warn">Warm Tones</option>
-            <option value="cool">Cool Tones</option>
-            <option value="blackWhite">Black and White</option>
-            <option value="vibrant">Vibrant Tones</option>
-            <option value="muted">Muted Tones</option>
-            <option value="pastel">Pastels</option>
+          <select id="styleFilter">
+            <option value="">Select Style</option>
+            <option value="Landscape photography">Landscape photography</option>
+            <option value="Documentary photography">
+              Documentary photography
+            </option>
+            <option value="Street photography">Street photography</option>
           </select>
-          <button id="apply-filters" class="filterToggle">Apply Filters</button>
         </div>
-        <div id="websites-container"></div>
-      </section>
+
+        <div id="photographerList"></div>
+      </div>
     </main>
+
     <footer>
-            <a class="attributionsLink" href="attributions.html">Click here to access Attributions Page</a>
+      <a class="attributionsLink" href="attributions.html">Click here to access Attributions Page</a>
     </footer>
+
     <script type="module" src="scripts/app.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/filter.js"></script>
     <script src="scripts/smoothscroll.js" defer></script>
     <script src="scripts/theme.js" defer></script>
+
   </body>
 </html>

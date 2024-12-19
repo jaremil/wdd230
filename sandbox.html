@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="sandbox.css" >
+    <link rel="stylesheet" href="sandbox.css">
   </head>
-  
   <body>
-    <header>
-      <button id="menu" class="open"></button>
+    <div class="container">
+      <h1>Photographer Filter</h1>
+      
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="">Select Category</option>
+          <option value="Film">Film</option>
+          <option value="Digital">Digital</option>
+        </select>
+        
+        <select id="styleFilter">
+          <option value="">Select Style</option>
+          <option value="Landscape photography">Landscape photography</option>
+          <option value="Documentary photography">Documentary photography</option>
+          <option value="Street photography">Street photography</option>
+        </select>
+      </div>
 
-    <nav>
-      <ul class="heading">
-          <li><a class="navBar" href="index.html">Home</a></li>
-          <li><a class="navBar" href="discover.html">Discover</a></li>
-          <li><a class="navBar" href="directory.html">Directory</a></li>
-          <li><a class="navBar" href="join.html">Join</a></li>
-        </ul>
-    </nav>
-  </header>
-    <script src="chamber/scripts/hamburger.js"></script>
+      <div id="photographerList">
+      </div>
+    </div>
+    <script src="sandbox.js"></script>
   </body>
 </html>

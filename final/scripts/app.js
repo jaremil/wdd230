@@ -1,50 +1,50 @@
-import { websites } from "./data.js";
-import {
-  filterByCategory,
-  filterByTechnology,
-} from "./filter.js";
+// import { websites } from "./data.js";
+// import {
+//   filterByCategory,
+//   filterByTechnology,
+// } from "./filter.js";
 
-function renderWebsites(websites) {
-  const container = document.getElementById("websites-container");
-  container.innerHTML = "";
+// function renderWebsites(websites) {
+//   const container = document.getElementById("websites-container");
+//   container.innerHTML = "";
 
-  websites.forEach((website) => {
-    const div = document.createElement("div");
-    div.className = "website-card";
-    div.innerHTML = `
-      <h2>${website.name}</h2>
-      <p>Category: ${website.category}</p>
-      <p>Technologies: ${website.technologies.join(", ")}</p>
-    `;
-    container.appendChild(div);
-  });
-}
+//   websites.forEach((website) => {
+//     const div = document.createElement("div");
+//     div.className = "website-card";
+//     div.innerHTML = `
+//       <h2>${website.name}</h2>
+//       <p>Category: ${website.category}</p>
+//       <p>Technologies: ${website.technologies.join(", ")}</p>
+//     `;
+//     container.appendChild(div);
+//   });
+// }
 
-function applyFilters() {
-  const category = document.getElementById("category-filter").value;
-  const technology = document.getElementById("technology-filter").value;
+// function applyFilters() {
+//   const category = document.getElementById("category-filter").value;
+//   const technology = document.getElementById("technology-filter").value;
 
-  let filteredWebsites = websites;
+//   let filteredWebsites = websites;
 
-  if (category) {
-    filteredWebsites = filterByCategory(filteredWebsites, category);
-  }
+//   if (category) {
+//     filteredWebsites = filterByCategory(filteredWebsites, category);
+//   }
 
-  if (technology) {
-    filteredWebsites = filterByTechnology(filteredWebsites, technology);
-  }
+//   if (technology) {
+//     filteredWebsites = filterByTechnology(filteredWebsites, technology);
+//   }
 
-  renderWebsites(filteredWebsites);
-}
+//   renderWebsites(filteredWebsites);
+// }
 
-document
-  .getElementById("apply-filters")
-  .addEventListener("click", applyFilters);
+// document
+//   .getElementById("apply-filters")
+//   .addEventListener("click", applyFilters);
 
-renderWebsites(websites);
+// renderWebsites(websites);
 
 
-{/*  <select id="category-filter" class="filterToggle">
+/*  <select id="category-filter" class="filterToggle">
 <option value="">All</option>
 <option value="Personal">Personal</option>
 <option value="Commercial">Commercial</option>
@@ -57,10 +57,10 @@ renderWebsites(websites);
 <option value="landscape">Landscape Photography</option>
 <option value="stillLife">Still Life Photography</option>
 <option value="macro">Macro Photography</option>
-</select> */}
+</select> */
 
 
-{/* <label for="technology-filter">Filter by Technology:</label>
+/* <label for="technology-filter">Filter by Technology:</label>
 <select id="technology-filter">
   <option value="">All</option>
   <option value="HTML">HTML</option>
@@ -78,4 +78,4 @@ renderWebsites(websites);
   <option value="vibrant">Vibrant Tones</option>
   <option value="muted">Muted Tones</option>
   <option value="pastel">Pastels</option>
-</select> */}
+</select> */

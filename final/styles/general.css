@@ -202,3 +202,42 @@ body[data-theme="light"] .attributionsLink:hover  {
   background-color: var(--dark-color, #0A0129);
   color: var(--medium-color, #85ABFF);
 }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.photographer-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.photographer-card:hover {
+  transform: translateY(-5px);
+}
+
+.photographer-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.photographer-card p {
+  margin: 5px 0;
+}
+
+.photographer-card p strong {
+  font-weight: bold;
+}
