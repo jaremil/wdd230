@@ -32,24 +32,35 @@ select {
   width: 48%;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin-bottom: 5%;
+}
+
 main {
   text-align: center;
   margin: 5%;
 }
 
 h1,
-h2 {
+h2,
+h3,
+label {
   font-family: var(--heading-font, sans-serif);
   text-align: left;
-  margin: auto;
+  margin-bottom: 5%;
   font-weight: bold;
 }
 
-label {
+/* label {
   font-family: var(--heading-font, sans-serif);
   display: block;
   margin: auto;
-}
+} */
 
 p,
 span {

@@ -3,8 +3,8 @@ const apiKey = "8L72Jii3WwGi3d0BaPnzPxnzLSlvwpgEzqbap7AS1Do4OTR3S5knUqNq";
 const searchForm = document.getElementById("search-form");
 const searchResult = document.getElementById("result");
 let sentinelObserver;
-let totalImagesDisplayed = 0; 
-const MAX_IMAGES = 28; 
+let totalImagesDisplayed = 0;
+const MAX_IMAGES = 28;
 
 const setupListeners = () => {
   searchForm.addEventListener("submit", onSearchFormSubmit);
@@ -14,7 +14,7 @@ const onSearchFormSubmit = (e) => {
   e.preventDefault();
   const query = searchForm.query.value.trim();
 
-  totalImagesDisplayed = 0; 
+  totalImagesDisplayed = 0;
   const apiURL = `https://api.pexels.com/v1/search?query=${query}&orientation=landscape`;
 
   fetchImages(apiURL)
@@ -37,21 +37,29 @@ const displayResults = (data) => {
   }
 
   data.photos.forEach((photo) => {
-    if (totalImagesDisplayed >= MAX_IMAGES) return; 
+    if (totalImagesDisplayed >= MAX_IMAGES) return;
 
-    searchResult.innerHTML += `
-    <div class="grid-item">
+    const gridItem = document.createElement("div");
+    gridItem.classList.add("grid-item");
+
+    gridItem.innerHTML = `
       <a href="${photo.url}" target="_blank">
-        <img src="${photo.src.medium}" alt="${photo.alt}" />
+        <img 
+          data-src="${photo.src.medium}" 
+          alt="${photo.alt}" 
+          class="lazy-image" 
+        />
         <div class="image-content">
           <h3 class="photographer">${photo.photographer}</h3>
         </div>
       </a>
-    </div>
     `;
 
-    totalImagesDisplayed++; 
+    searchResult.appendChild(gridItem);
+    totalImagesDisplayed++;
   });
+
+  lazyLoadImages();
 
   if (totalImagesDisplayed < MAX_IMAGES) {
     createObserver(data.next_page);
@@ -108,7 +116,7 @@ const fetchImages = async (apiURL) => {
 
 const loadMoreResults = (nextPageURL) => {
   if (totalImagesDisplayed >= MAX_IMAGES) {
-    removeObserver(); 
+    removeObserver();
     return;
   }
 
@@ -117,6 +125,25 @@ const loadMoreResults = (nextPageURL) => {
   fetchImages(nextPageURL)
     .then((data) => displayResults(data))
     .finally(hideLoading);
+};
+
+const lazyLoadImages = () => {
+  const lazyImages = document.querySelectorAll(".lazy-image");
+
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const lazyImage = entry.target;
+        lazyImage.src = lazyImage.dataset.src; 
+        lazyImage.classList.remove("lazy-image");
+        observer.unobserve(lazyImage); 
+      }
+    });
+  });
+
+  lazyImages.forEach((image) => {
+    imageObserver.observe(image);
+  });
 };
 
 setupListeners();

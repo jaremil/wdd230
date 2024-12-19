@@ -62,9 +62,9 @@
         <h2>Image Search</h2>
   
         <form id="search-form" class="search-form">
-          <input type="search" id="query" placeholder="Search images" />
-          <button type="submit">
-            <span class="material-symbols-outlined"> search </span>
+          <input type="search" id="query" class="filterToggle" placeholder="Search images" >
+          <button type="submit" class="filterToggle">
+            <span class="material-symbols-outlined"> Search </span>
           </button>
         </form>
   
@@ -89,17 +89,21 @@
         </p>
       </section>
 
-      <div class="container">
         <h2>Photographer Filter</h2>
 
         <div class="filters">
-          <select id="categoryFilter">
+
+          <label for="categoryFilter">Select Category</label>
+
+          <select id="categoryFilter" class="filterToggle">
             <option value="">Select Category</option>
             <option value="Film">Film</option>
             <option value="Digital">Digital</option>
           </select>
 
-          <select id="styleFilter">
+          <label for="styleFilter">Select Style</label>
+
+          <select id="styleFilter" class="filterToggle">
             <option value="">Select Style</option>
             <option value="Landscape photography">Landscape photography</option>
             <option value="Documentary photography">
@@ -108,6 +112,7 @@
             <option value="Street photography">Street photography</option>
           </select>
         </div>
+
         <div id="photographerList"></div>
 
     </main>
@@ -121,7 +126,6 @@
     <script src="scripts/smoothscroll.js" defer></script>
     <script src="scripts/smoothscroll.js" defer></script>
     <script src="scripts/theme.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/pexels"></script>
 
   </body>
 </html>
