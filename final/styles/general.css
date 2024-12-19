@@ -242,3 +242,7 @@ body[data-theme="light"] .attributionsLink:hover  {
 .grid-item .photographer::before {
   font-size: 1.5rem;
 }
+
+.attrPage {
+  color: var(--black-color, #000);
+}

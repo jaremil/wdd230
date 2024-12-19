@@ -43,15 +43,12 @@ const displayResults = (data) => {
     gridItem.classList.add("grid-item");
 
     gridItem.innerHTML = `
-      <a href="${photo.url}" target="_blank">
+      <a class:"filterToggle" href="${photo.url}" target="_blank">
         <img 
           data-src="${photo.src.medium}" 
           alt="${photo.alt}" 
           class="lazy-image" 
         />
-        <div class="image-content">
-          <h3 class="photographer">${photo.photographer}</h3>
-        </div>
       </a>
     `;
 
