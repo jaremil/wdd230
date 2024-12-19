@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/sizing.css" >
     <title>Photography Portfolio</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -38,7 +39,6 @@
         <option value="light">Light Mode</option>
         <option value="dark">Dark Mode</option>
       </select>
-
     </header>
 
     <main>
@@ -56,6 +56,19 @@
           while providing a platform that reflects our passion for storytelling
           and the art of photography.
         </p>
+      </section>
+
+      <section class="container">
+        <h2>Image Search</h2>
+  
+        <form id="search-form" class="search-form">
+          <input type="search" id="query" placeholder="Search images" />
+          <button type="submit">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </form>
+  
+        <div id="result" class="grid"></div>
       </section>
 
       <section id="aboutPhotography">
@@ -77,7 +90,7 @@
       </section>
 
       <div class="container">
-        <h1>Photographer Filter</h1>
+        <h2>Photographer Filter</h2>
 
         <div class="filters">
           <select id="categoryFilter">
@@ -95,20 +108,20 @@
             <option value="Street photography">Street photography</option>
           </select>
         </div>
-
         <div id="photographerList"></div>
-      </div>
+
     </main>
 
     <footer>
       <a class="attributionsLink" href="attributions.html">Click here to access Attributions Page</a>
     </footer>
 
-    <script type="module" src="scripts/app.js"></script>
-    <script src="scripts/data.js"></script>
     <script src="scripts/filter.js"></script>
+    <script src="scripts/image.js"></script>
+    <script src="scripts/smoothscroll.js" defer></script>
     <script src="scripts/smoothscroll.js" defer></script>
     <script src="scripts/theme.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/pexels"></script>
 
   </body>
 </html>

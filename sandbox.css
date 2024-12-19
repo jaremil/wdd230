@@ -1,38 +1,33 @@
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+img {
+  width: 100%;
+  height: auto;
 }
 
-.filters {
+.container {
+  margin: 5%;
+}
+
+.search-form {
+  max-width: 400px;
+  margin: auto;
+  height: 40px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
-.photographer-card {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+.grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
-.photographer-card:hover {
-  transform: translateY(-5px);
+.grid-item img {
+  object-fit: cover;
+  height: 350px;
 }
 
-.photographer-card h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-.photographer-card p {
-  margin: 5px 0;
-}
-
-.photographer-card p strong {
-  font-weight: bold;
+.grid-item .photographer::before {
+  font-size: 1.5rem;
 }

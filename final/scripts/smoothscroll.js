@@ -19,4 +19,3 @@ function initializeSmoothScrolling() {
   }
   
   document.addEventListener("DOMContentLoaded", initializeSmoothScrolling);
-  
