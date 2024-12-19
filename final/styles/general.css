@@ -78,7 +78,48 @@ nav ul {
   text-decoration: transparent;
 }
 
-/* filters*/
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.photographer-card {
+  padding: 15px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.image-item img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.grid-item img {
+  object-fit: cover;
+  height: 350px;
+}
+
+.grid-item .photographer::before {
+  font-size: 1.5rem;
+}
+
+.attrPage {
+  color: var(--black-color, #000);
+}
+
+/* Filters*/
 
 .filterToggle{
   font-family: var(--heading-font, sans-serif);
@@ -113,18 +154,33 @@ nav ul {
   transition: color 0.3s ease;
 }
 
+.searchButton {
+  border: solid;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#query {
+  width: 50%;
+  height: 30px;
+}
+
 /* Color theme changes */
 
 body[data-theme="light"] .filterToggle:hover, 
 body[data-theme="light"] #technology-filter:hover,
-body[data-theme="light"] #category-filter:hover {
+body[data-theme="light"] #category-filter:hover,
+body[data-theme="light"] .searchButton:hover {
   background-color: var(--white-color, #FFFFFF);
   border-color: var(--bright-color, #0041CC);
   color: var(--bright-color, #0041CC);
 }
 
 body[data-theme="dark"] .filterToggle:hover, 
-body[data-theme="dark"] #technology-filter:hover {
+body[data-theme="dark"] #technology-filter:hover,
+body[data-theme="dark"] .searchButton:hover {
   background-color: var(--dark-color, #0A0129);
   border-color: var(--medium-color, #85ABFF);
   color: var(--medium-color, #85ABFF);
@@ -133,7 +189,8 @@ body[data-theme="dark"] #technology-filter:hover {
 body[data-theme="dark"] .filterToggle, 
 body[data-theme="dark"] #technology-filter, 
 body[data-theme="dark"] #category-filter,
-body[data-theme="dark"] .website-card {
+body[data-theme="dark"] .website-card,
+body[data-theme="dark"] .searchButton {
   background-color: var(--dark-color, #0A0129);
   border-color: var(--light-color, #E2D9FF);
   color: var(--light-color, #E2D9FF);
@@ -154,7 +211,7 @@ body[data-theme="light"] .website-card {
 body[data-theme="light"] .filterToggle, 
 body[data-theme="light"] #technology-filter, 
 body[data-theme="light"] #category-filter,
-body[data-theme="light"] .search-form {
+body[data-theme="light"] .searchButton {
   background-color: var(--white-color, #FFFFFF);
   border-color: var(--black-color, #000);
   color: var(--black-color, #000);
@@ -195,54 +252,4 @@ body[data-theme="dark"] .navBar:hover,
 body[data-theme="light"] .attributionsLink:hover  {
   background-color: var(--dark-color, #0A0129);
   color: var(--medium-color, #85ABFF);
-}
-
-.filters {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.photographer-card {
-  padding: 15px;
-}
-
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.image-item img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.search-form {
-  max-width: 90%;
-  margin: auto;
-  height: 40px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-
-.grid {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.grid-item img {
-  object-fit: cover;
-  height: 350px;
-}
-
-.grid-item .photographer::before {
-  font-size: 1.5rem;
-}
-
-.attrPage {
-  color: var(--black-color, #000);
 }
