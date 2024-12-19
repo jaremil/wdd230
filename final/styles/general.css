@@ -12,7 +12,6 @@ nav ul {
   list-style: none;
   margin: 5%;
   text-decoration: none;
-  font-weight: bold;
   padding: 10px;
 }
 
@@ -91,14 +90,11 @@ nav ul {
   transition: color 0.3s ease;
 }
 
-#changeToggle,
-#query {
-  font-weight: bold;
+#changeToggle {
   display: block;
   margin: auto;
   text-align: center;
   width: 60%;
-  text-decoration: bold;
 }
 
 #apply-filters {
@@ -117,29 +113,18 @@ nav ul {
   transition: color 0.3s ease;
 }
 
-.socialButton {
-  border: none;
-  text-decoration: bold;
-  border-radius: 30%;
-}
-
 /* Color theme changes */
 
 body[data-theme="light"] .filterToggle:hover, 
 body[data-theme="light"] #technology-filter:hover,
-body[data-theme="light"] #category-filter:hover,
-body[data-theme="light"] .search-form:hover, 
-body[data-theme="light"] #query:hover {
+body[data-theme="light"] #category-filter:hover {
   background-color: var(--white-color, #FFFFFF);
   border-color: var(--bright-color, #0041CC);
   color: var(--bright-color, #0041CC);
 }
 
 body[data-theme="dark"] .filterToggle:hover, 
-body[data-theme="dark"] #technology-filter:hover, 
-body[data-theme="dark"] #category-filter:hover,
-body[data-theme="light"] .search-form:hover, 
-body[data-theme="dark"] #query:hover {
+body[data-theme="dark"] #technology-filter:hover {
   background-color: var(--dark-color, #0A0129);
   border-color: var(--medium-color, #85ABFF);
   color: var(--medium-color, #85ABFF);
@@ -257,11 +242,3 @@ body[data-theme="light"] .attributionsLink:hover  {
 .grid-item .photographer::before {
   font-size: 1.5rem;
 }
-
-#query {
-  height: 35px;
-}
-
-
-
-
